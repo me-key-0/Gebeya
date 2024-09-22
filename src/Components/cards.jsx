@@ -1,11 +1,11 @@
 
 
 import React from 'react';
-import img1 from '../assets/coffee.jpg'; // Replace with your actual image paths
+import img1 from '../assets/Cereal-grains_cr-Adobe-stock_E.jpg'; 
 import img2 from '../assets/friutes.jpg';
 import img3 from '../assets/oil_seeds.jpg';
 import img4 from '../assets/diary_products.jpg';
-import img5 from '../assets/Cereal-grains_cr-Adobe-stock_E.jpg';
+import img5 from '../assets/coffee.jpg';
 import img6 from '../assets/Pulses_and_Legumes.jpg';
 
 const categories = [
@@ -28,7 +28,7 @@ const Cards = () => {
           <img 
             src={category.img} 
             alt={category.name} 
-            className="w-96 h-48 object-cover" // Fixed height for uniformity
+            className="w-96 h-48 object-cover" 
           />
           <div className="p-4 flex flex-col flex-grow">
             <h3 className="text-center text-[green] text-lg font-semibold mb-2">
