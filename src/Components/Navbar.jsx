@@ -16,7 +16,7 @@ const Navbar = () => {
         {/* Left Logo and Text */}
         <div className="flex items-center space-x-2">
           <img src={logo} alt="Logo" className="h-16" />
-          {/* <span className="text-white text-lg">GEBEYA</span> */}
+          {/* <span className="text-white text-lg">GEBEYA</span>*/}
         </div>
 
         {/* Center Links */}
