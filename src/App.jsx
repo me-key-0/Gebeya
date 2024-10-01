@@ -7,7 +7,7 @@ import Cards from "./Components/Leadingpage/cards"
 import Registration from './Components/Registration/Registration'
 import Signup from './Components/Registration/Signup'
 import Signin from './Components/Registration/Login'
-import logo from './assets/logo geb.jpg'
+import logo from './assets/logo for Gebeya.jpg'
 
 
 const App = () => {
