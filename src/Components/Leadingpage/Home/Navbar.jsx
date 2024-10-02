@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import logo from "../../assets/logo for Gebeya.jpg";
+import logo from "../../../assets/logo for Gebeya.jpg";
 
 const Navbar = () => {
   return (
@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         {/* Left Logo and Text */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="Logo" className="h-16" />
+          <img src={logo} alt="Logo" className="h-16 w-28" />
         </div>
 
         {/* Center Links */}
@@ -26,8 +26,8 @@ const Navbar = () => {
           <Link to="/blog" className="hover:text-gray-300 text-xl">
             Blog
           </Link>
-          <Link to="/Registration" className="hover:text-gray-300 text-xl">
-            Register
+          <Link to="/Contact" className="hover:text-gray-300 text-xl">
+            Contact us
           </Link>
         </div>
 

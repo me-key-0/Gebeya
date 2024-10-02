@@ -2,12 +2,12 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import img1 from '../../assets/Cereal-grains_cr-Adobe-stock_E.jpg'; 
-import img2 from '../../assets/friutes.jpg';
-import img3 from '../../assets/oil_seeds.jpg';
-import img4 from '../../assets/diary_products.jpg';
-import img5 from '../../assets/coffee.jpg';
-import img6 from '../../assets/imgforcategories/honey.jpg';
+import img1 from '../../../assets/Cereal-grains_cr-Adobe-stock_E.jpg'; 
+import img2 from '../../../assets/friutes.jpg';
+import img3 from '../../../assets/oil_seeds.jpg';
+import img4 from '../../../assets/diary_products.jpg';
+import img5 from '../../../assets/coffee.jpg';
+import img6 from '../../../assets/imgforcategories/honey.jpg';
 
 const categories = [
   { name: "Cereal Grains", img: img1 },

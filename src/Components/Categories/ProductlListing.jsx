@@ -170,8 +170,8 @@ const products = [
           {/* Header */}
           <header className="flex justify-between items-center mb-4">
             <div className="flex items-center">
-              <img src={logo} alt="Logo" className="h-10 mr-2" /> 
-              <h1 className="text-2xl font-bold">Agricultural Products</h1>
+              <img src={logo} alt="Logo" className="h-14  w-24 mr-2" /> 
+              <h1 className="text-2xl font-bold text-green-700">Agricultural Market </h1>
             </div>
   
             {/* Search Bar */}
@@ -184,11 +184,6 @@ const products = [
                 className="border border-gray-300 rounded-lg p-2 pl-10 pr-2 w-full" 
               />
               <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
-            </div>
-  
-            <div>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded mr-2 hover:font-bold">Sign Up</button>
-              <button className="bg-green-500 text-white px-4 py-2 rounded hover:font-bold">Log In</button>
             </div>
           </header>
   

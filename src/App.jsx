@@ -1,32 +1,37 @@
-import React from 'react';
+import React from "react";
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from "./Components/Leadingpage/Navbar"
-import Slider from "./Components/Leadingpage/Slider"
-import Cards from "./Components/Leadingpage/cards"
-import Registration from './Components/Registration/Registration'
-import Signup from './Components/Registration/Signup'
-import Signin from './Components/Registration/Login'
-import logo from './assets/logo for Gebeya.jpg'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Registration from "./Components/Registration/Registration";
+import Signup from "./Components/Registration/Signup";
+import Signin from "./Components/Registration/Login";
+import logo from "./assets/logo for Gebeya.jpg";
+import About from "./Components/Leadingpage/About";
+import Home from "./Components/Leadingpage/Home/Home";
+import Blog from "./Components/Leadingpage/Blog";
+import Contact from './Components/Leadingpage/Contact'
+import TermsAndConditions from './Components/Registration/TermsAndCondition'
+import ProductListing from "./Components/Categories/ProductlListing";
 
 
 const App = () => {
   return (
     <Router>
-      <div className="bg-[white-green] min-h-screen" >
-        < Navbar/>
-        < Slider/>
-        <Cards/>
+      <div className="bg-[white-green] min-h-screen">
+        
         <Routes>
-          <Route path='/signup' element={<Signup logo={logo}/>}/>
-          <Route path='/signin' element={<Signin  logo={logo}/>} />
-          <Route path='/Registration' element={<Registration/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup logo={logo} />} />
+          <Route path="/signin" element={<Signin logo={logo} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/Blog" element={<Blog />} />
+          <Route path="/Registration" element={<Registration />} />
+          <Route path ="/Contact" element={<Contact/>} />
+          <Route path="/terms" element={<TermsAndConditions />}/>
+          <Route path ='/products' element={< ProductListing/>}/>
         </Routes>
       </div>
     </Router>
-  )
-}
+  );
+};
 
-export default App
-
-
+export default App;

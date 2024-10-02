@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom'
-import img1 from '../../assets/aaa.jpeg';
-import img2 from '../../assets/aaaa.jpeg';
-import img3 from '../../assets/aa.jpeg';
-import img4 from '../../assets/a.jpeg';
+import img1 from '../../../assets/aaa.jpeg';
+import img2 from '../../../assets/aaaa.jpeg';
+import img3 from '../../../assets/aa.jpeg';
+import img4 from '../../../assets/a.jpeg';
 
 
 const slides = [img1, img2,img3,img4];
