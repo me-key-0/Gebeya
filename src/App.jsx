@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes ,Link } from "react-router-dom";
 import Registration from "./Components/Registration/Registration";
 import Signup from "./Components/Registration/Signup";
 import Signin from "./Components/Registration/Login";
@@ -17,7 +17,19 @@ const App = () => {
   return (
     <Router>
       <div className="bg-[white-green] min-h-screen">
-        
+      <nav>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/products">Product Listing</Link>
+                    </li>
+                    <li>
+                      <Link to="/Registration">Registration</Link>
+                    </li>
+                </ul>
+            </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup logo={logo} />} />
