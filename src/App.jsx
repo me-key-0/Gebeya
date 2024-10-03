@@ -28,6 +28,7 @@ const App = () => {
           <Route path ="/Contact" element={<Contact/>} />
           <Route path="/terms" element={<TermsAndConditions />}/>
           <Route path ='/products' element={< ProductListing/>}/>
+          
         </Routes>
       </div>
     </Router>
