@@ -47,7 +47,7 @@ const Blog = () => {
                 </aside>
             </div>
 
-            {/* call to action  */}
+           
             <section className="bg-green-500 text-white p-10 text-center mt-10">
                 <h2 className="text-2xl font-bold mb-4">Stay Updated!</h2>
                 <p className="mb-4">Subscribe to our newsletter for the latest news and updates.</p>

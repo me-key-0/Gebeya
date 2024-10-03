@@ -8,7 +8,7 @@ const SignIn = ({logo}) => {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    // Placeholder for future backend integration
+    // Placeholder for  backend integration
     console.log('Email:', email);
     console.log('Password:', password);
   }

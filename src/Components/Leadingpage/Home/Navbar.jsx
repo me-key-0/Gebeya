@@ -5,7 +5,7 @@ import logo from "../../../assets/logo for Gebeya.jpg";
 const Navbar = () => {
   return (
     <nav className="bg-white p-3">
-      <h1 className="text-green-600 text-center mb-4 text-3xl font-bold italic">
+      <h1 className="text-green-500 text-center mb-4 text-3xl font-bold italic">
         🌿 HERE, YOU CAN FIND EVERYTHING WHAT YOU WANT! 🌿
       </h1>
       <hr />
@@ -16,7 +16,7 @@ const Navbar = () => {
         </div>
 
         {/* Center Links */}
-        <div className="flex space-x-4 text-green-600 font-bold">
+        <div className="flex space-x-4 text-green-600 font-semibold">
           <Link to="/" className="hover:text-gray-300 text-xl">
             Home
           </Link>
@@ -32,10 +32,10 @@ const Navbar = () => {
         </div>
 
         {/* Right Buttons */}
-        <div className="flex space-x-4 text-green-600 font-semibold">
+        <div className="flex space-x-4 text-green-600 font-bold">
           <Link to="/signin">
             <button
-              className="border border-gray-300 px-8 py-2 rounded-lg hover:bg-green-600 hover:text-white transition duration-300"
+              className="border border-gray-300 px-8 py-2 shadow rounded-lg hover:bg-green-600 hover:text-white transition duration-300"
               aria-label="Log In"
             >
               Log In
@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
           <Link to="/signup">
             <button
-              className="border border-gray-300 px-8 py-2 rounded-lg hover:bg-green-600 hover:text-white transition duration-300"
+              className="border border-gray-300 px-8 py-2 shadow rounded-lg hover:bg-green-600 hover:text-white transition duration-300"
               aria-label="Sign Up"
             >
               Sign Up

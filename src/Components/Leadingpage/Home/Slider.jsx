@@ -1,58 +1,55 @@
-
-import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom'
 import img1 from '../../../assets/aaa.jpeg';
 import img2 from '../../../assets/aaaa.jpeg';
 import img3 from '../../../assets/aa.jpeg';
 import img4 from '../../../assets/a.jpeg';
+import Slider from "react-slick";
+import {Link} from 'react-router-dom'
 
+const Hero = () => {
+  const ImageList = [
+    { id: 1, src: img1, title: "Products from the Source", description: "Pure products from the source " },
+    { id: 2, src: img2, title: "Freash products", description: "you can get fresh products" },
+    { id: 3, src: img3, title: "From All regions of the Country ", description: "From the region what you want " },
+    { id: 4, src: img4, title: "Transportation", description: "we will provide transportation for you." },
+  ];
 
-const slides = [img1, img2,img3,img4];
-
-
-
-const Slider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [fade, setFade] = useState(true); 
-
-  const nextSlide = () => {
-    setFade(false); 
-    setTimeout(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-      setFade(true); 
-    }, 300); 
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "ease-in-out",
+    pauseOnHover: false,
+    pauseOnFocus: true,
   };
 
-  
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="relative w-[65vw] mx-auto h-[68vh] overflow-hidden mt-6">
-      <img
-        src={slides[currentSlide]}
-        alt={`Slide ${currentSlide + 1}`}
-        className={`w-full h-full object-cover transform transition-transform duration-500 ${fade ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}
-      />
-      
-      <div className="absolute top-2/3 left-1/3 w-1/2 transform -translate-y-1/2 p-4 pb-8">
-        <h2 className="text-white text-2xl font-bold italic mb-4">
-          Up to 70% off on all products scale 🎉
-        </h2>
-        <Link to="/signup">
-          <button className=" text-white font-bold absolute top-2/3 left-1/5 w-1/2 px-4 py-2 rounded-lg bg-[green] transition duration-300">
-            Sign Up
-          </button>
-          </Link>
-        
-      </div>
+    <div className="relative min-w-[550px] min-h-[650px]">
+      <Slider {...settings}>
+        {ImageList.map((data) => (
+          <div key={data.id} className="relative w-full h-[650px]">
+            {/* Image */}
+            <img src={data.src} alt={data.title} className="w-full h-full object-cover" />
+            {/* Text Overlay */}
+            <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white p-4">
+              <h1 className="text-4xl  font-mono font-semibold mb-2">{data.title}</h1>
+              <p className="text-lg mb-4 font-light ">{data.description}</p>
+              <Link to='/signup'>
+              <button className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-all">
+                Join Now
+              </button>
+              </Link>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
 
-export default Slider;
-
-
+export default Hero;
 
