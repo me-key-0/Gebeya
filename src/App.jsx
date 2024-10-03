@@ -17,19 +17,6 @@ const App = () => {
   return (
     <Router>
       <div className="bg-[white-green] min-h-screen">
-      <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/products">Product Listing</Link>
-                    </li>
-                    <li>
-                      <Link to="/Registration">Registration</Link>
-                    </li>
-                </ul>
-            </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup logo={logo} />} />
